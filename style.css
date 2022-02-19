@@ -51,7 +51,7 @@ section{
 
 #sec-one div{
     background-color: #343C4F;
-    height: clamp(2.5em, 8vw, 6.5em);
+    height: clamp(2.5em, 7vw, 6.5em);
     /* height: 80.5%; */
     border: 3px solid black;
     border-radius: clamp(0.8em, 2vw, 2.5em);
@@ -64,7 +64,7 @@ section{
 
 ul {
     background-color: #242B38;
-    width: clamp(1em, 9vw, 8.7em);
+    width: clamp(1.3em, 9.1vw, 8.7em);
     /* width:  70%; */
     height: 83%;
     border-radius: clamp(0.1em, 2vw, 1.4em);
@@ -82,14 +82,15 @@ ul {
 }
 
 .time-score{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-left: -40px;
     text-align: center;
     color: #00B479;
-    font-size: clamp(0.6em, 1vw, 1rem);
+    font-size: clamp(0.45em, 1vw, 1rem);
     /* font-size: 1rem; */
     font-weight: 1000;
-    letter-spacing: -2px;
+    letter-spacing: clamp(-0.1em, 0em, -0.1em);
+    /* letter-spacing: -2px; */
     display: block;
     text-align: center;
     margin-top: clamp(0em, 0.5vw, 0.2em);
@@ -218,7 +219,7 @@ img{
     align-items: center;
     border-radius: clamp(1.7em, 5vw, 2.5em);
     /* border-radius: 40px; */
-    width: clamp(20em, 47vw, 45em);
+    width: clamp(26em, 47vw, 45em);
     /* width: 50.7%; */
     /* height: 65%; */
     height: clamp(8em, 20vw, 18em);
@@ -254,13 +255,17 @@ img{
     /* min-width: 12%; */
     height: clamp(2.4em, 5.4vw, 6.6em);
     /* height: 88px; */
-    border-radius: clamp(0.6em, 2vw, 1.8em);
+    border-radius: clamp(0.6em, 1.7vw, 1.8em);
     /* border-radius: 25px; */
     border: 3px solid black;
     margin-left: clamp(1em, 2.7vw, 2.5em);
     /* margin-left: 5%; */
     background-color: #BFA6A3;
     box-shadow: 0px 6px 1px #000000;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #number button span{
@@ -268,11 +273,15 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    /* width: 67px; */
-    height: 86%;
+    border-radius: clamp(0.15em, 1vw, 0.5em);
+    /* border-radius: 20px; */
+    width: clamp(0.5em, 4.2vw, 1.6em);
+    /* width: 65px; */
+    /* height: 87%; */
+    height: clamp(0.55em, 4.3vw, 1.7em);
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: clamp(1em, 2.6vw, 3.2em);
+    /* font-size: 40px; */
     font-weight: 1000;
     /* word-spacing: 30px; */
     letter-spacing: -2px;
@@ -282,9 +291,9 @@ img{
 
 
 #operetions{
-    margin-left: clamp(1.2em, 11vw, 10em);
+    margin-left: clamp(2em, 10vw, 10em);
     /* margin-left: 11%; */
-    width: clamp(2.3em, 5vw, 4.7em);
+    width: clamp(3em, 5vw, 4.7em);
     /* width: 5.2%; */
     height: 100%;
     display: flex;
@@ -312,13 +321,15 @@ img{
     background-color: #AD0025;
     width: 90%;
     height: 87%;
-    border-radius: 19px;
+    /* border-radius: 19px; */
+    border-radius: clamp(0.15em, 1.2vw, 0.5em);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 40px;
+    font-size: clamp(1em, 2.6vw, 3em);
+    /* font-size: 40px; */
     font-weight: 1000;
 }
 
@@ -333,7 +344,7 @@ img{
 }
 
 #firt{
-    margin-top: clamp(1.7em, 0.1vw, 4em);
+    margin-top: clamp(1.7em, 3.5vw, 4em);
     /* margin-top: 50px; */
 }
 
