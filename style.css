@@ -76,6 +76,7 @@ ul {
 }
 
 #score{
+    /* margin-right: clamp(0em, 4.2vw, 4em); */
     margin-left: 4.7%;
     width: clamp(5em, 13vw, 20em);
     /* width: 13.8%; */
@@ -112,17 +113,21 @@ ul {
 }
 
 #time{
-    margin-left: 19%;
+    margin-left: clamp(4em, calc(20vw - 30px), 17em);
+    /* margin-left: 18vw; */
     width: clamp(5em, 13vw, 20em);
 }
 
 #life-info{
     margin-left: 14%;
-    width: 29%;
+    width: clamp(8em, 28vw, 26em);
+    /* width: 29%; */
 }
 
 #life-info ul{
-    width: 85.7%;
+    padding: 0;
+    width: clamp(8.1em, 26vw, 24.8em);
+    /* width: 85.7%; */
     display: flex;
 }
 
@@ -140,17 +145,37 @@ ul {
 
 #life-info span{
     color: #00B479;
-    font-size: 1rem;
+    font-size: clamp(0.5em, 1.1vw, 1em);
+    /* font-size: 1rem; */
     font-weight: 1000;
-    letter-spacing: -2px;
+    letter-spacing: clamp(-0.1em, 0vw, -0.1em);
+    /* letter-spacing: -2px; */
     display: block;
     text-align: center;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     
 }
 
 #lvl-number-externo{
-    margin-left: 100px;
+    margin-left: clamp(-0.5em, calc(8vw - 47px), 6em);
+    /* margin-left: 100px; */
+}
+
+#lvl-number-externo h2{
+    color: #F4B522;
+    font-size: clamp(1.1em, 3vw, 3em);
+    /* font-size: 3.2rem; */
+    font-weight: 1000;
+     /* margin: 0; */
+    text-align: center;
+} 
+
+#match-current{
+    color: #257FFE;
+    font-size: clamp(1.2em, 3vw, 3em);
+    /* font-size: 3.2rem; */
+    margin: 0;
+    font-weight: 1000;
 }
 
 #life{
@@ -158,10 +183,12 @@ ul {
     flex-direction: column;
     align-items: center;
     border: 2px solid green;
-    margin-left: 12px;
+    margin-left: clamp(0.1em, calc(6vw - 29px), 3em);
+    /* margin-left: 12px; */
 }
 #life span{
-    margin: 0;
+    margin-top: clamp(-0.5em, 0vw, -0.5em);
+    /* margin-bottom: clamp(1em, -100vw, 0em); */
 }
 
 
@@ -169,23 +196,22 @@ ul {
     display: flex;
     justify-content: space-between;
     border: 2px solid red;
-    width: 170px;
+    width: clamp(7.9em, 13vw, 10.5em);
+    /* width: 130px; */
 }
 
 img{
-    width: 40px;
-    margin-left: 13px;
+    width: clamp(1.7em, 3vw, 2.4em);
+    /* width: 40px; */
+    /* margin-top: clamp(0.5em, 0.1em, 10em); */
+    margin-left: clamp(0.5em, calc(4vw - 20px), 0.9em);
+    /* margin-left: 13px; */
 }
 
-#match-current{
-    color: #257FFE;
-    font-size: 3.2rem;
-    margin: 0;
-    font-weight: 1000;
-}
 
 #match-current-externo{
-    margin-left: 8%;
+    margin-left: clamp(-0.3em, calc(4vw - 25px), 2em);
+    /* margin-left: 8%; */
 }
 
 /* CÓDIGO RELACIONADO A SEGUNDA DIV */
@@ -376,7 +402,7 @@ img{
     border: 3px solid black;
     /* width: 20%; */
     /* height: 20%; */
-    margin-left: clamp(2em, 15vw, 14em);
+    margin-left: clamp(2em, calc(16vw - 50px), 13em);
     /* margin-left: 16%; */
     box-shadow: -4px 7px 0px #000000;
 }
@@ -432,28 +458,34 @@ i{
 }
 
 #sec-three button{
-    margin-left: clamp(0.2em, 6vw, 8em);
+    margin-left: clamp(1.2em, calc(9vw - 29px), 8em);
     /* margin-left: 95px; */
-    width: clamp(2.9em, 10vw, 12.2em);
-    height: clamp(2.6em, 8vw, 6.5em);
-    margin-top: clamp(2.5em, 3vw, 3.6em);
-    border-radius: clamp(1em, 3vw, 2em);
+    width: clamp(5em, 11vw, 12.2em);
+    height: clamp(2.7em, 8vw, 6.5em);
+    margin-top: clamp(2.1em, 4vw, 3.6em);
+    border-radius: clamp(1em, 2vw, 2em);
     background-color: #E54AD4;
     border: 3px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: -1px 5px 4px #000000;
+    padding: 0;
 }
 
 #sec-three button div{
-    width: clamp(2.5em, 9vw, 13em);
-    height: clamp(2em, 4.5vw, 5.3em);
-    border-radius: clamp(0.7em, 2vw, 1.5em);
+    width: clamp(3.8em, 10vw, 4.35em);
+    height: clamp(2em, 1vw, 2.1em);
+    border-radius: clamp(0.6em, 1vw, 1.3em);
     background-color: #931EAA;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    font-size: clamp(0.9em, 3vw, 2.5em);
+    /* font-size: 35px; */
+    font-weight: 500;
+    font-family: 'Solway', serif;
+
 }
 
